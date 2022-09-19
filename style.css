@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --dark-blue-bg: hsl(217, 54%, 11%);
+    --dark-blue-card-bg: hsl(216, 50%, 16%);
+    --dark-blue-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+  }
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Outfit', sans-serif;
+    color: white;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--dark-blue-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-image{
+    height: 300px;
+    width: 300px;
+    margin-top: 25px;
+    margin-left: 25px;
+
+    
+}
+.card-image img{
+    width: 100%;
+    border-radius: 10px;
+}
+.card{
+    height: 600px;
+    width: 350px;
+    background-color: var(--dark-blue-card-bg);
+    box-shadow: 0px 11px 4px 22px rgba(0, 0, 0, 0.082);
+    border-radius: 1.5rem;
+}
+h1,p,.info_value,user_name{
+    margin: 1rem 0;
+}
+.card__info{
+    margin-top: 15px;
+    margin-left: 25px;
+   width: 300px;
+}
+.info_desc{
+    color: var( --soft-blue);
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin: 1rem 0 2rem 0;
+}
+.info_value{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.eth{
+    color: var(--cyan);
+    font-weight: 600;
+}
+.info_value{
+    color: var(--soft-blue);
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 2rem;
+
+}
+.etheicon,.infoimgtext{
+    margin-right: 1rem;
+    display: inline-block;
+}
+.etheicon{
+    display: flex;
+    align-items: center;
+}
+.etheicon svg,.clock svg{
+    margin-right: .75rem;
+}
+.clock{
+    display: flex;
+    align-items: center;
+}
+
+.clockdata{
+   color: var(--soft-blue);
+}
+.userimg{
+    height:30px;
+    width: 30px;
+    margin-right: 1.2rem;
+}
+.userimg img{
+    height: 100%;
+    width: 100%;
+    border: 1.5px solid var(--white);
+    border-radius: 50%;
+}
+.user_name{
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+    color: var(--white);
+}
+.user-name-first{
+    color: var(--soft-blue);
+    
+}
+hr{
+    border: 1px solid var(--dark-blue-line);
+    margin-bottom: 1rem;
+}
+.info_name{
+    font-weight: 600;
+    margin: 2rem 0 1.5rem 0;
+}
